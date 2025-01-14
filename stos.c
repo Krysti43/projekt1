@@ -51,17 +51,17 @@ void wyszukaj_element(MY_STUDENT* student) {
 
 
 	do {
-		printf("W jaki sposob wyszukac:\n 1 - Po nazwisku\n 2 - Po roku urodzenia\n 3 - Po kierunku\n");
+		printf("W jaki sposob wyszukac:\n 1 - Po nazwisku\n 2 - Po roku urodzenia\n 3 - Po kierunku\n 4 - Cofnij\n");
 		scanf_s("%d", &wybor2);
 		switch (wybor2) {
 		case 1:
-			po_nazwisku(student);
+			po_nazwisku(student, top);
 			break;
 		case 2:
-
+			po_roku(student, top);
 			break;
 		case 3:
-
+			po_kierunku(student, top);
 			break;
 		case 4:
 

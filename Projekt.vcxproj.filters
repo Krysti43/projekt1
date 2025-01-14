@@ -27,6 +27,9 @@
     <ClCompile Include="wyszukiwanie.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pliki.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="wyszukiwanie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pliki.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

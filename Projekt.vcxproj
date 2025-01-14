@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="data.c" />
+    <ClCompile Include="pliki.c" />
     <ClCompile Include="Projekt.c" />
     <ClCompile Include="stos.c" />
     <ClCompile Include="wyszukiwanie.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="data.h" />
+    <ClInclude Include="pliki.h" />
     <ClInclude Include="wyszukiwanie.h" />
     <ClInclude Include="stos.h" />
   </ItemGroup>

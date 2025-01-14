@@ -4,6 +4,7 @@
 #include "data.h"
 #include "stos.h"
 #include "wyszukiwanie.h"
+#include "pliki.h"
 
 int main()
 {
@@ -17,11 +18,11 @@ int main()
 		case 1:
 			student = dodawanie();
 			if (!student) {
-				printf("B³¹d\n");
+				printf("Blad zapisu\n");
 			}
 			else {
 				if (stworz_element(student) == NULL) {
-					printf("B³¹d\n");
+					printf("Blad zapisu\n");
 					return 1;
 				}
 			};
@@ -36,19 +37,18 @@ int main()
 			wyszukaj_element();
 			break;
 		case 5:
-
+			zapisz_plik();
 			break;
 		case 6:
-
+			wczytaj_plik();
 			break;
 		case 7:
 			pop_wszystko();
 			break;
 		default:
-			printf("Prosze wybraæ poprawn¹ opcje");
+			printf("Prosze wybrac poprawna opcje\n");
 		}
-		
-	} while (wybor != 7);
+	} while (((wybor != 7) && (getchar() != '\n')) || (wybor != 7));
 		pop_wszystko();
 	return 0;
 };
